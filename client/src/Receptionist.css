@@ -1,0 +1,275 @@
+.rec-root {
+  padding: 28px 24px;
+  max-width: 560px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rec-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.rec-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+
+.rec-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  margin-top: 2px;
+}
+
+.rec-stats {
+  display: flex;
+  gap: 20px;
+}
+
+.rec-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.stat-val {
+  font-family: var(--mono);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* Current token */
+.rec-current {
+  background: var(--accent-light);
+  border: 1px solid #c0cfff;
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.rec-section-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.current-display {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.current-token {
+  font-family: var(--mono);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.current-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.current-empty {
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+/* Call next button */
+.btn-call {
+  width: 100%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 20px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.btn-call:hover:not(:disabled) {
+  opacity: 0.88;
+}
+
+.call-preview {
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.85;
+  margin-left: 8px;
+}
+
+/* Sections */
+.rec-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-form {
+  display: flex;
+  gap: 8px;
+}
+
+.rec-input {
+  flex: 1;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  font-size: 15px;
+  color: var(--text);
+  background: var(--bg);
+  transition: border-color 0.15s;
+}
+
+.rec-input:focus {
+  border-color: var(--accent);
+}
+
+.btn-add {
+  background: var(--text);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+}
+
+.btn-add:hover:not(:disabled) {
+  opacity: 0.8;
+}
+
+/* Time */
+.time-display, .time-edit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.time-val {
+  font-family: var(--mono);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.time-input {
+  width: 72px;
+  flex: none;
+}
+
+.time-unit {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.btn-edit {
+  background: var(--surface);
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.btn-save {
+  background: var(--accent);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.btn-cancel {
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+/* Queue list */
+.queue-list {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.queue-row {
+  display: flex;
+  align-items: center;
+  padding: 11px 16px;
+  gap: 12px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  transition: background 0.1s;
+}
+
+.queue-row:last-child { border-bottom: none; }
+.queue-row:hover { background: var(--surface); }
+
+.q-pos {
+  font-size: 12px;
+  color: var(--text-muted);
+  width: 18px;
+  text-align: center;
+}
+
+.q-token {
+  font-family: var(--mono);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+  width: 36px;
+}
+
+.q-name {
+  flex: 1;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.q-wait {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: var(--mono);
+}
+
+/* Reset */
+.btn-reset {
+  background: transparent;
+  color: var(--danger);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ffd0ce;
+  align-self: flex-start;
+}
+
+.btn-reset:hover {
+  background: #fff5f5;
+}
